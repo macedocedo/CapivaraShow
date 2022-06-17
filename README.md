@@ -8,5 +8,5 @@ JavaScrip / HTML5 / CSS3 / SwiperJS
 - #Home -> Banner 
 - #Capivara ->  Caixas com itens+
 - #Novidades -> novos Itens+
-- #Sub/Carivareis -> E-mail / Contato
+- #Sub/Capivareis -> E-mail / Contato
 - #Footer -> Acessos a outros contatos / suporte / mais informaçoes 
