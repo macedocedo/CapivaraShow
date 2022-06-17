@@ -9,4 +9,4 @@ JavaScrip / HTML5 / CSS3 / SwiperJS
 - #Box ->  Caixas com itens+
 - #Novidades -> novos Itens+
 - #Sub -> E-mail / Contato
-- Footer -> Acessos a outros contatos / suporte / mais informaçoes 
+- #Footer -> Acessos a outros contatos / suporte / mais informaçoes 
