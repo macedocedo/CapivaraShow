@@ -6,7 +6,7 @@ JavaScrip / HTML5 / CSS3 / SwiperJS
 
 - #Nav - > Navegação base
 - #Home -> Banner 
-- #Box ->  Caixas com itens+
+- #Capivara ->  Caixas com itens+
 - #Novidades -> novos Itens+
-- #Sub -> E-mail / Contato
+- #Sub/Carivareis -> E-mail / Contato
 - #Footer -> Acessos a outros contatos / suporte / mais informaçoes 
