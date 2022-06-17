@@ -1,7 +1,12 @@
-# Responsive Ecommerce Website
-## [Watch it on youtube](https://youtu.be/74UVy9gomVs)
-### Responsive Ecommerce Website
-Beautiful responsive ecommerce website, it has multiple sections such as a home, featured products, new arrivals, and much more. Fully responsive and mobile first.
+# Responsive Website
 
-Don't forget to join the channel for more videos like this.
-[Bedimcode](https://www.youtube.com/c/Bedimcode)
+JavaScrip / HTML5 / CSS3 / SwiperJS 
+
+# Link: 
+
+- #Nav - > Navegação base
+- #Home -> Banner 
+- #Box ->  Caixas com itens+
+- #Novidades -> novos Itens+
+- #Sub -> E-mail / Contato
+- Footer -> Acessos a outros contatos / suporte / mais informaçoes 
