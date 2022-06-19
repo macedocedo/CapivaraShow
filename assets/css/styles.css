@@ -13,12 +13,24 @@
 /*===== CORES =====*/
 
 :root {
-  --first-color: #54198b;
-  --first-color-alt: #D2321E;
+  /*===== CORES NAV =====*/
+  --navmenu-color: #575766;
+  --navsegunda-color: #299684;
+  --textonav-color: #f8f8f8;
+  /**/
+
+  /*===== CORES botão e texto =====*/
+  --first-color: #3a363d;
   --white-color: #FAFAFF;
+  --first-color-alt: #563d9b;
+   /**/
+
+   /*===== CORES Texto nos Blocos em geral =====*/
   --dark-color: #101010;
-  --dark-color-light: #606060;
-  --gray-color: #F0F1F3;
+  --dark-color-light: #333030;
+  --gray-color: #dbd7d7;
+  --black-color: #292929;
+  /**/
 }
 
 /*===== Fonte e tipografia =====*/
@@ -32,6 +44,9 @@
   --small-font-size: .75rem;
 }
 
+/*===== Tamanhos de telas ( Responsive ) =====*/
+
+/*===== min-width: 1024px ( Responsive ) =====*/
 @media screen and (min-width: 1024px) {
   :root {
     --big-font-size: 3rem;
@@ -42,6 +57,7 @@
   }
 }
 
+/*===== min-width: 768pxpx ( Responsive ) =====*/
 @media screen and (min-width: 768px) {
   :root {
     --big-font-size: 6rem;
@@ -108,19 +124,19 @@ img {
 
 /*===== CLASS CSS ===== */
 
-.section{
+.box{
   padding: 3rem 0;
 
 }
 
-.section-title{
+.box-title{
   font-size: var(--h2-font-size);
   color: var(--dark-color);
   margin: var(--mb-4) 0 var(--mb-1);
   text-align: center;
 }
 
-.section-all{
+.box-all{
   display: block;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi);
@@ -142,12 +158,12 @@ img {
 }
 
 .i-header{
-width: 100%;
-position: fixed;
-top: 0;
-left: 0;
-z-index: var(--z-fixed);
-background-color: var(--gray-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--gray-color);
 }
 
 /*===== NAV =====*/
@@ -164,26 +180,28 @@ background-color: var(--gray-color);
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--white-color);
+    width: 50%;
+    height: 60%;
+    padding: 3rem;
+    background-color: var(--navmenu-color);
     transition: .5s;
+    border-radius: 1rem;
   }
 
 }
 
+/*===== Barra de navegação  =====*/
 .nav_item{
   margin-bottom: var(--mb-4);
 }
 
 .nav_link{
-  color: var(--dark-color);
+  color: var(--textonav-color);
   font-weight: var(--font-semi);
 }
 
 .nav_link:hover{
-  color: var(--first-color);
+  color: var(--textonav-color);
 }
 
 .nav_logo{
@@ -207,18 +225,103 @@ background-color: var(--gray-color);
 }
 
 .active{
-  color: var(--first-color);
+  color: var(--navsegunda-color);
 }
 
 /*===== HOME =====*/
+.home{
+  background-color: var(--gray-color);
+}
 
+.home_container{
+  height: calc(100vh - var(--header-height));
+}
+
+.home_data{
+  padding-top: 8rem;
+}
+
+.home_title{
+  align-self: center;
+  font-size: var(--big-font-size);
+  line-height: 1;
+  letter-spacing: .5rem;
+  margin-bottom: 4rem;
+}
+
+.home_title span{
+  font-size: var(--h1-font-size);
+}
+
+.home_img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 560px;
+}
 
 /*BUTTONS*/
+  
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    transition: .3s;
+    border-radius: 4px;
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
 
 /*===== Box de itens =====*/
 
+.box_container{
+  row-gap: 2rem;
+}
 
+.box_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: var(--gray-color);
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.box_box:hover{
+transform: translateY(-.5rem);
+}
+
+.box_img{
+  width: 100px;
+}
+
+.box_title{
+  font-size: var(--h1-font-size);
+  line-height: 2.2;
+  margin-bottom: var(--mb-2);
+  text-transform: uppercase;
+  font-weight: var(--font-semi);
+}
+
+.box_subtitle{
+  font-size: var(--h2-font-size);
+  color: var(--dark-color-light);
+}
+
+.box_view{
+  font-size: var(--small-font-size);
+  color: var(--dark-color-light);
+}
+
+.box_view:hover{
+  text-decoration: underline;
+}
 /*===== Box em estoque =====*/
 
 
