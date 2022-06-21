@@ -22,7 +22,7 @@
   /*===== CORES botão e texto =====*/
   --first-color: #3a363d;
   --white-color: #FAFAFF;
-  --first-color-alt: #563d9b;
+  --first-color-alt: #299684;
    /**/
 
    /*===== CORES Texto nos Blocos em geral =====*/
@@ -46,6 +46,30 @@
 
 /*===== Tamanhos de telas ( Responsive ) =====*/
 
+/*===== min-width: 1980px ( Responsive ) 
+@media screen and (min-width: 1980px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 938rem;
+    --small-font-size: .75rem;
+  }
+}
+=====*/
+
+/*===== min-width: 1280px ( Responsive ) 
+@media screen and (min-width: 1280px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 938rem;
+    --small-font-size: .75rem;
+  }
+}
+=====*/
+
 /*===== min-width: 1024px ( Responsive ) =====*/
 @media screen and (min-width: 1024px) {
   :root {
@@ -57,7 +81,7 @@
   }
 }
 
-/*===== min-width: 768pxpx ( Responsive ) =====*/
+/*===== min-width: 768px ( Responsive ) =====*/
 @media screen and (min-width: 768px) {
   :root {
     --big-font-size: 6rem;
@@ -67,6 +91,30 @@
     --small-font-size: .813rem;
   }
 }
+
+/*===== min-width: 330px ( Responsive ) 
+@media screen and (min-width: 330px) {
+  :root {
+    --big-font-size: 6rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+  }
+}
+=====*/
+
+/*===== min-width: 230px ( Responsive ) 
+@media screen and (min-width: 280px) {
+  :root {
+    --big-font-size: 6rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+  }
+}
+=====*/
 
 /*===== Margem =====*/
 
@@ -257,7 +305,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 560px;
+  width: 360px;
 }
 
 /*BUTTONS*/
@@ -270,7 +318,7 @@ img {
     font-size: var(--small-font-size);
     font-weight: var(--font-semi);
     transition: .3s;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .button:hover{
@@ -290,7 +338,6 @@ img {
   padding: 0 1.5rem;
   background-color: var(--gray-color);
   transition: .3s;
-  border-radius: 5px;
 }
 
 .box_box:hover{
@@ -303,7 +350,7 @@ transform: translateY(-.5rem);
 
 .box_title{
   font-size: var(--h1-font-size);
-  line-height: 2.2;
+  line-height: 1.8;
   margin-bottom: var(--mb-2);
   text-transform: uppercase;
   font-weight: var(--font-semi);
@@ -322,7 +369,8 @@ transform: translateY(-.5rem);
 .box_view:hover{
   text-decoration: underline;
 }
-/*===== Box em estoque =====*/
+/*===== Outros box =====*/
+
 
 
 /*===== Oferta =====*/
