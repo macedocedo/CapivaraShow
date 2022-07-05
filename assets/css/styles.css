@@ -14,19 +14,19 @@
 
 :root {
   /*===== CORES NAV =====*/
-  --navmenu-color: #575766;
-  --navsegunda-color: #299684;
-  --textonav-color: #f8f8f8;
+  --navmenu-color: #000000;
+  --navsegunda-color: #edf030;
+  --textonav-color: #fffefe;
 
   /*===== CORES botão e texto =====*/
-  --first-color: #3a363d;
-  --white-color: #FAFAFF;
-  --first-color-alt: #299684;
+  --first-color: #0c0c02;
+  --white-color: #ffffff;
+  --first-color-alt: #000000;
 
    /*===== CORES Texto nos Blocos em geral =====*/
   --dark-color: #101010;
   --dark-color-light: #333030;
-  --gray-color: #dbd7d7;
+  --gray-color: #f0e47a;
   --black-color: #292929;
 
 }
@@ -67,6 +67,59 @@
   }
 }
 =====*/
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-v {
+  background: #eee;
+}
+
 
 /*===== min-width: 1024px ( Responsive ) =====*/
 @media screen and (min-width: 1024px) {
@@ -280,11 +333,11 @@ img {
 }
 
 .home_container{
-  height: calc(100vh - var(--header-height));
+  height: calc(106vh - var(--header-height));
 }
 
 .home_data{
-  padding-top: 6rem;
+  padding-top: 10rem;
 }
 
 .home_title{
@@ -303,7 +356,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 360px;
+  width: 460px;
 }
 
 /*BUTTONS*/
@@ -343,7 +396,7 @@ transform: translateY(-.5rem);
 }
 
 .box_img{
-  width: 100px;
+  width: 125px;
 }
 
 .box_title{
@@ -369,6 +422,88 @@ transform: translateY(-.5rem);
 }
 /*===== Outros box =====*/
 
+/*=============== NEW ARRIVALS ===============*/
+.new__container{
+  padding-top: 1rem;
+}
+
+.new__img{
+  width: 120px;
+  margin-bottom: var(--mb-0-5);
+  transition: .3s;
+}
+
+.new__content{
+  position: relative;
+  background: var(--container-color);
+  width: 242px;
+  padding: 3rem 0 1.5rem 0;
+  border-radius: .75rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.new__tag{
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+}
+
+.new__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.new__subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.new__prices{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.new__price{
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.new__discount{
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  text-decoration: line-through;
+  font-weight: var(--font-medium);
+}
+
+.new__button{
+  display: inline-flex;
+  padding: .5rem;
+  border-radius: .25rem .25rem .75rem .25rem;
+  position: absolute;
+  bottom: 0;
+  right: -3rem;
+}
+
+.new__icon{
+  font-size: 1.25rem;
+}
+
+.new__content:hover .new__img{
+  transform: translateY(-.5rem);
+}
+
+.new__content:hover .new__button{
+  right: 0;
+}
+
 
 
 /*===== Oferta =====*/
@@ -384,6 +519,41 @@ transform: translateY(-.5rem);
 
 
 /*===== FOOTER =====*/
+
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: 2%;
+  background-color: var(--container-color);
+  box-shadow: 0 4px 12px rgba(224, 11, 11, 0.1);
+  display: inline-flex;
+  padding: .35rem;
+  border-radius: .25rem;
+  z-index: var(--z-tooltip);
+  opacity: .8;
+  transition: .4s;
+}
+
+.scrollup:hover { 
+  opacity: 1;
+}
+
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
 
 
 /* ===== MEDIA =====*/
