@@ -32,27 +32,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 //-------------------
 
-/*=============== HOME SWIPER ===============*/
-let Swiper = new Swiper(".new-swiper", {
-    spaceBetween: 30,
-    loop: 'true',
-    
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-})
-
-/*=============== NEW SWIPER ===============*/
-let newSwiper = new Swiper(".new-swiper", {
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: 'true',
-    spaceBetween: 16,
-}); 
-
-window.addEventListener('scroll', scrollActive)
-
 /*=============== SHOW SCROLL UP ===============*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
@@ -61,16 +40,6 @@ function scrollUp(){
   }
   window.addEventListener('scroll', scrollUp)
   
-  
-  /*=============== SCROLL REVEAL ANIMATION ===============*/
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-  })
-
   
 
   
