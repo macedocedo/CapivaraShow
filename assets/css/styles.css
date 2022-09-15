@@ -24,9 +24,9 @@
   --first-color-alt: #000000;
 
    /*===== CORES Texto nos Blocos em geral =====*/
-  --dark-color: #101010;
-  --dark-color-light: #333030;
-  --gray-color: #f3e569;
+  --dark-color: #000000;
+  --dark-color-light: #000000;
+  --gray-color: #fff06a;
   --black-color: #292929;
 
 }
@@ -76,7 +76,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: rgb(255, 255, 255);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -280,9 +280,9 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 46%;
-    height: 30%;
-    padding: 3rem;
+    width: 50%;
+    height: 40%;
+    padding: 2rem;
     background-image: url(../img/capivara-na-grama.jpg);
     background-size: cover;
     transition: .5s;
