@@ -224,6 +224,7 @@ img {
 
 /*===== CLASS CSS ===== */
 
+
 .box{
   padding: 3rem 0;
 
@@ -331,8 +332,8 @@ img {
 
 /*===== HOME =====*/
 .home{
-  background-image: url(../img/BG-PG01.png);
-  background-position: center;
+  background-image: url(../img/CAPIBARA-SHOW-FUNDO-02.png);
+  background-size: cover;
 }
 
 .home_container{
@@ -358,7 +359,7 @@ img {
 .home_img{
   position: absolute;
   right: 0;
-  bottom: -10px;
+  bottom: -20px;
   width: 460px;
 }
 
@@ -627,13 +628,14 @@ transform: translateY(-.5rem);
   left: 1rem;
   bottom: 1%;
   background-color: var(--container-color);
-  box-shadow: 0 4px 10px rgba(241, 227, 25, 0.767);
   display: inline-flex;
-  padding: .35rem;
-  border-radius: .25rem;
+  padding: 1rem;
+  border-radius: 1rem;
   z-index: var(--z-tooltip);
   opacity: .8;
   transition: .4s;
+  background-image: url(../img/aa.png);
+  background-size: cover;
 }
 
 .scrollup:hover { 
