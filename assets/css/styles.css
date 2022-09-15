@@ -144,6 +144,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+}
+
 /*===== min-width: 330px ( Responsive ) 
 @media screen and (min-width: 330px) {
   :root {
@@ -488,7 +494,6 @@ transform: translateY(-.5rem);
   bottom: 0;
 }
 
-
 .new__link{
   position: absolute;
   bottom: -100%;
@@ -500,10 +505,6 @@ transform: translateY(-.5rem);
   background: #292929;
   transition: .3s;
 }
-
-
-
-
 
 .new__container{
   padding-top: 1rem;
