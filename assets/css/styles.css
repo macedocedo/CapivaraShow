@@ -226,14 +226,14 @@ img {
 
 
 .box{
-  padding: 3rem 0;
+  padding: 2rem 0;
 
 }
 
 .box-title{
   font-size: var(--h2-font-size);
   color: var(--dark-color);
-  margin: var(--mb-4) 0 var(--mb-1);
+  margin: var(--mb-2) 0 var(--mb-2);
   text-align: center;
 }
 
@@ -373,7 +373,7 @@ img {
     font-size: var(--small-font-size);
     font-weight: var(--font-semi);
     transition: .3s;
-    border-radius: 5px;
+    border-radius: 2rem;
 }
 
 .button:hover{
@@ -612,20 +612,79 @@ transform: translateY(-.5rem);
   letter-spacing: .2rem;
 }
 
-/*===== Noticias =====*/
+/*===== fale oque achou =====*/
+
+.avaliar{
+  text-align: center;
+  justify-content: space-around
+}
+
+.avaliar__description{
+  margin-bottom: var(--mb-2);
+  font-size: var(--small-font-size);
+  color: var(--dark-color-light);
+}
+
+.avaliar__form{
+  display: grid;
+  grid-template-columns: 4fr .5fr;
+}
+
+.avaliar__input{
+  outline: none;
+  border-radius: 1rem;
+  background-color: var(--gray-color);
+  padding: 0 1rem;
+}
+
 
 
 /*===== FOOTER =====*/
 
+.footer{
+ background: url('../img/CAPIBARA-SHOW-FUNDO-02.png')no-repeat center/cover;
+ height: auto;
+}
+
+.footer__container{
+  row-gap: 1rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer__title{
+  margin-bottom: var(--mb-1);
+}
+
+.footer__deal{
+  margin-bottom: var(--mb-2);
+}
+
+.footer__store{
+  width: 100px;
+}
+
+.footer__link, .footer__social{
+  color: var(--dark-color-light);
+}
+
+.footer__link:hover{
+  text-decoration: underline;
+}
+
+.footer__social{
+  font-size: 1.3rem;
+  margin-right: var(--mb-1);
+}
 
 /* Show Scroll Up*/
+
 .show-scroll {
   bottom: 3rem;
 }
 
 .scrollup {
   position: fixed;
-  left: 1rem;
+  right: 1rem;
   bottom: 1%;
   background-color: var(--container-color);
   display: inline-flex;
@@ -634,7 +693,7 @@ transform: translateY(-.5rem);
   z-index: var(--z-tooltip);
   opacity: .8;
   transition: .4s;
-  background-image: url(../img/aa.png);
+  /*background-image: url(../img/aa.png); */
   background-size: cover;
 }
 
