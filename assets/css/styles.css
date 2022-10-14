@@ -232,7 +232,7 @@ img {
 
 
 .box{
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 
 }
 
@@ -590,6 +590,30 @@ transform: translateY(-.5rem);
 
 
 /*===== Oferta =====*/
+
+.button1{
+  display: inline-block;
+  background: url('../img/gifzin.gif')no-repeat center/cover;
+  color: var(--black-color);
+  padding: 1rem;
+  font-weight: var(--font-semi);
+  transition: .3s;
+  border-radius: 1rem;
+}
+
+
+
+.offer__bg1{
+  text-align: center;
+}
+
+
+.offer__data1{
+  padding: 0.5rem .25rem;
+  color: var(--font-semi);
+}
+
+
 .offer__bg{
   background: url('../img/capivara\ na\ agua.gif')no-repeat center/cover;
   text-align: center;
