@@ -1,260 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== Icones ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        <title>CapiravaShow</title>
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./css/styles1.css">
+
+        <title>CachorroChorro</title>
     </head>
     <body>
 
-        <!--===== HEADER =====-->
-        <header class="i-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav_logo">Capivara Show</a>
+        <!--==================== HEADER ====================-->
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="./assets/img/dd.gif" alt="" class="nav__logo-img"> 
+                    CachorroChorro
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#celebrate" class="nav__link">Como funciona</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#nav__toggle" class="nav__link">Dicas</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <img src="assets/img/nav-light.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+
+                    <!-- Theme change button -->
+
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
                 </div>
 
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
-                            <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                            <li class="nav_item"><a href="#img" class="nav_link">Capivara Fotos</a></li>
-                            <li class="nav_item"><a href="#special" class="nav_link">Special</a></li>
-                            <li class="nav_item"><a href="#footer" class="nav_link">Seja um Capivareis</a></li>
-                    </ul> 
-                </div>
-
-                <div>
-                    <i class='bx bx-menu nav_toggle' id="nav-toggle"></i>
-                </div>
             </nav>
         </header>
 
-        <main class="i-main">
+        <!--==================== MAIN ====================-->
 
-            <!--===== Home =====-->
+        <main class="main">
+
+            <!--==================== HOME ====================-->
+
             <section class="home" id="home">
-                <div class="home_container bd-grid">
-                    <div class="home_data">
-                        <h1 class="home_title">Link da Capivara<br></h1>
-                        <a href="#box" class="button">O melhor da Capivara</a>
+                <div class="home__container container grid">
+                    <img src="assets/img/capipng.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title"> CachorroChorro <br> Adote !</h1>
+                        <p class="home__description">
+                            Adotar um cachorro é uma grande responsabilidade. Afinal, o animal ficará com você por muito tempo – já que cães vivem cerca de 15 anos - e dependerá totalmente da sua família para dar carinho, alimentá-lo, e prestar atendimento em seus cuidados básicos.
+                        </p>
+                        <a href="https://portalanimal.campinas.sp.gov.br/adocao" class="button">Adote!</a>
                     </div>
-                    <img src="assets/img/CAP.-PG01-C-FLOR-E-CAIXA-DIALOGO.png" alt="" class="home_img">
-                </div>
-
-                
-               
-            </section>
-
-            <!--===== Box de 2 itens =====-->
-
-            <section class="box box" id="box">
-                <div class="box_container bd-grid">
-                    <div class="box_box">
-                        <img src="assets/img/backpackWoman.png" alt="" class="box_img">
-
-                        <div class="box_data">
-                            <h2 class="box_title"><span class="box_subtitle">Ela ama água</span><br>Adora café</h2>
-                            <h3 href="#" class="box_view">Curtir</h3>
-                        </div>
-                    </div> 
-
-                    <div class="box_box">
-                        <div class="box_data">
-                            <h2 class="box_title"><span class="box_subtitle">Ela ama água</span><br>Adora café</h2>
-                            <h3 href="#" class="box_view">Curtir</h3>
-                        </div>
-                        <img src="assets/img/1337205e38f163be1b28f655b4fae48f.png" alt="" class="box_img">
-                    </div>
-
                 </div>
             </section>
 
-            <!--===== outros Box - featured =====-->
-            <section class="imgart foto" id="img">
+            <!--==================== GIVING ====================-->
 
-                <h2 class="box-title">Fotos</h2>
-                <a href="#" class="box-all"></a>
+            <section class="giving section container">
+                <h2 class="section__title">
+                    Onde posso adotar  <br> um amiguinho de quatro patas.
+                </h2>
 
-                <div class="imgart__container bd-grid">
-                    <div class="imgart__product">
-                        <div class="imgart__box">
-                            <div class="imgart__new">Família</div>
-                            <img src="assets/img/capivaraolhar.jpg" alt="" class="artimg__img">
-                        </div>
-
-                        <div class="imgart__data">
-                            <h3 class="imgart__name">Em família</h3>
-                        </div>
-
+                <div class="giving__container grid">
+                    <div class="giving__content">
+                        <img src="./assets/img/logoflagsemsl.gif" alt="" class="giving__img">
+                        <h3 class="giving__title">App Adota Pet Go</h3>
+                        <p class="giving__description"></p>
                     </div>
 
-                    <div class="imgart__product">
-                        <div class="imgart__box">
-                            <div class="imgart__new">Observando</div>
-                            <img src="assets/img/olhando.jpg" alt="" class="artimg__img">
-                        </div>
-
-                        <div class="imgart__data">
-                            <h3 class="imgart__name">Tranquila e calma</h3>
-                        </div>
+                    <div class="giving__content">
+                        <img src="./assets/img/gg.gif" alt="" class="giving__img">
+                        <h3 class="giving__title">AMPARA Animal</h3>
+                        <p class="giving__description"></p>
                     </div>
 
-                    <div class="imgart__product">
-                        <div class="imgart__box">
-                            <div class="imgart__new">Das tecnologia</div>
-                            <img src="assets/img/nopc.jpg" alt="" class="artimg__img">
-                        </div>
-
-                        <div class="imgart__data">
-                            <h3 class="imgart__name">No computer</h3>
-                        </div>
-                    </div>
-
-                    <div class="imgart__product">
-                        <div class="imgart__box">
-                            <div class="imgart__new">Só paz</div>
-                            <img src="assets/img/capivarapassaro.jpg" alt="" class="artimg__img">
-                        </div>
-
-                        <div class="imgart__data">
-                            <h3 class="imgart__name">Fazendo novas amizades</h3>
-                        </div>
-                    </div>
-
-            <!--===== ofertar - offer =====-->
-            
-                    <div class="imgart__product">
-                        <div class="imgart__box">
-                            <div class="imgart__new">Só no grito</div>
-                            <img src="assets/img/aas.jpg" class="artimg__img">
-                        </div>
-
-                        <div class="imgart__data">
-                            <h3 class="imgart__name">Revoltada com a vida</h3>
-                        </div>
-
+                    <div class="giving__content">
+                        <img src="./assets/img/Logo Flag.gif" alt="" class="giving__img">
+                        <h3 class="giving__title">App MeAuDote</h3>
+                        <p class="giving__description"></p>
                     </div>
 
                 </div>
             </section>
 
+            <!--==================== CELEBRATE ====================-->
 
-            <!--===== Oferta =====-->
-
-            <section class="offer box" id="special">
-                <div class="offer__bg">
-                    <div class="offer__data">
-                        <h2 class="offer__title">special</h2>
-                        <p class="offer__description">Special de todos os tempos</p>
-
-                        <a href="https://www.youtube.com/watch?v=R4v-d5F3Ndg" class="button">Confira</a>
+            <section class="celebrate section container" id="celebrate">
+                <div class="celebrate__container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title celebrate__title">
+                            Como adotar um cachorro online? 
+                        </h2>
+                        <p class="celebrate__description">
+                            Existem diversos sites de ONGs e abrigos de cães e gatos que fazem a mediação entre o tutor e os animais abandonados ou resgatados das ruas. Além disso, é possível adotar animais online utilizando aplicativos para celular.
+                        </p>
                     </div>
+                    <img src="./assets/img/giphy.gif" alt="" class="celebrate__img">
+                    <h2 class="section__title celebrate__title">Tenha um motivo <br> para voltar pra casa!</h2>
+                    </p>
                 </div>
             </section>
 
-            <!--===== Novidades =====-->
+            <!--==================== MESSAGE ====================-->
 
-            <section class="box new" id="special">
-                <h2 class="box-title">Conteúdo</h2>
-                <a href="" class="box-all">Tudo sobre Capivara</a>
-
-                <div class="new__container bd-grid">
-                    <div class="new__box">
-                        <img src="assets/img/backpackWoman.png" alt="" class="new__img">
-
-                        <div class="new__link">
-                            <a href="https://revistagalileu.globo.com/Ciencia/noticia/2016/10/tudo-o-que-voce-precisa-saber-sobre-capivaras.html" class="button">Confira</a>
-                        </div>
-                    </div>
+            <section class="message section container">
+                <div class="message__container grid">
+                    <img src="./assets/img/dog1.gif" alt="" class="home__img">
+                    <h2 class="section__title celebrate__title">
+                        Cachorro Like 
+                    </h2>
+                    </form>
                 </div>
-
-                <div class="new__container bd-grid">
-                    <div class="new__box">
-                        <img src="assets/img/backpackWoman.png" alt="" class="new__img">
-
-                        <div class="new__link">
-                            <a href="https://www.gazetadigital.com.br/editorias/cidades/no-dia-internacional-da-capivara-confira-curiosidades/706726" class="button">Confira</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="new__container bd-grid">
-                    <div class="new__box">
-                        <img src="assets/img/backpackWoman.png" alt="" class="new__img">
-
-                        <div class="new__link">
-                            <a href="https://mundoeducacao.uol.com.br/biologia/capivara.htm" class="button">Confira</a>
-                        </div>
-                    </div>
-                </div>
-
             </section>
-
-            <!-- fale oque achou -->
-            <section class="avaliar box" id="avaliar">
-                <div class="avaliar__container bd-grid">
-                    <div class="avaliar__suscribe">
-                        <h2 class="avaliar-title">O que achou?</h2>
-                        <p class="avaliar__description">Capirava Agradece!</p>
-                        <form action="" class="avaliar__form">
-                            <input type="text" class="avaliar__input" placeholder="Deixe seu comentário!">
-                            <a href="#" class="button">Enviar</a> 
-                        </form>
-                    </div>
-                </div>
-                
-            </section>
-
         </main>
 
-        <!--===== Footer =====-->
-        
-        <footer class="footer foter" id="footer">
-            <div class="footer__container bd-grid">
+        <!--==================== FOOTER ====================-->
 
-                <div class="footer__box">
-                    <h3 class="footer__title">Criadores</h3>
-                    
-                        <a href="https://github.com/macedocedo" class="footer__social"><i class='bx bxl-github' ></i></a>
-                        <a href="https://www.linkedin.com/in/mateus-macedo-06095516a/" class="footer__social"><i class='bx bx bxl-linkedin-square' ></i></a>
-                        <a href="https://www.instagram.com/pqpalerms/?hl=bn" class="footer__social"><i class='bx bxl-instagram'></i></a>
+        <footer class="footer section">
+            <div class="footer__container container grid">
+
+                <div class="nav__togglee" id="nav__toggle"></div>
+
+                <div>
+                    <h3 class="footer__title">Lugares onde posso<br>adotar e doar</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://gaarcampinas.org/" class="footer__link">GAAR Campinas</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/caoracaovalente/?ref=page_internal" class="footer__link">ONG Cãoração Valente</a>
+                        </li>
+                        <li>
+                            <a href="http://amordebicho.org.br/" class="footer__link">amor de bicho campinas</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="footer__box">
+                <div>
+                    <h3 class="footer__title">Dicas para os Dogs</h3>
 
-                    <h3 class="footer__title">Quem somos!</h3>
-                    <p class="footer__deal">Loucos por capivara</p>
-                    <p class="footer__deal">Designer e Programadores</p>
-
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.arenales.com.br/blog/18-alimentos-saudaveis-que-vao-fortalecer-a-imunidade-do-seu-cachorro/" class="footer__link">Alimentos</a>
+                        </li>
+                        <li>
+                            <a href="https://www.latavirada.com.br/blogs/noticias/15-dicas-para-passear-com-cachorro" class="footer__link">Diversão</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.cobasi.com.br/cuidados-com-cachorros-10-dicas-de-saude/" class="footer__link">Saúde</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="footer__box">
+                <div>
+                    <h3 class="footer__title">Como ajudar os Dog</h3>
 
-                        <h3 class="footer__title">O que queremos!</h3>
-                        <p class="footer__deal">Trabalhar com o'que gostamos</p>
-                        <p class="footer__deal">Oportunidades de mostrar nosso trabalho</p>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://acaochego.org/" class="footer__link">Acão chego</a>
+                        </li>
+                        <li>
+                            <a href="https://caoviver.com.br/" class="footer__link">Cão viver</a>
+                        </li>
+                        <li>
+                            <a href="https://ilm.org.br/" class="footer__link">Instituto Luisa Mell</a>
+                        </li>
+                    </ul>
+                </div>
 
-                </div> 
             </div>
-</footer>
+
+            <span class="footer__copy">&#169; Estudante Mateus Macedo</span>
+        </footer>
+
         <!--=============== SCROLL UP ===============-->
 
-    <a href="#" class="scrollup" id="scroll-up"> 
-        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
-    </a>
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
 
-        
+        <!--=============== SCROLL REVEAL ===============-->
 
-        <!--===== MAIN JS  peidinho de veia =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="./js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+
+        <script src="./js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+
+        <script src="./js/main.js"></script>
     </body>
-</html>
-
-<!--===== peidinho de veia =====-->
+</html> 
