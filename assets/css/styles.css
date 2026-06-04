@@ -120,7 +120,54 @@ body {
   background: #eee;
 }
 
+/* ==========================
+   MOBILE
+========================== */
 
+@media screen and (max-width: 768px){
+
+    .home_container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home_title{
+        font-size: 2rem;
+    }
+
+    .home_img{
+        max-width: 280px;
+    }
+
+    .box_container{
+        grid-template-columns: 1fr;
+    }
+
+    .box_box{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgart__container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .new{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new__container{
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
 
 /*===== min-width: 1024px ( Responsive ) =====*/
 @media screen and (min-width: 1024px) {
