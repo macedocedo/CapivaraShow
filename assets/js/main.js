@@ -1,45 +1,69 @@
+/*===== MENU TOGGLE (mobile) =====*/
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
 
-/*===== MENU SHOW =====*/ 
-/*===== MENU navegação efeito de click para executar ou nao =====*/ 
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+}
 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+/*===== FECHAR MENU AO CLICAR NO LINK =====*/
+document.querySelectorAll('.nav_link').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+    });
+});
 
-if(toggle && nav){
-    toggle.addEventListener('click', ()=>{
-        nav.classList.toggle('show')
-        })
+/*===== SCROLL SPY - destaca link ativo conforme seção visível =====*/
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    const scrollY = window.scrollY;
+
+    sections.forEach(section => {
+        const sectionTop    = section.offsetTop - 90;
+        const sectionHeight = section.offsetHeight;
+        const sectionId     = section.getAttribute('id');
+        const link = document.querySelector(`.nav_link[href="#${sectionId}"]`);
+
+        if (!link) return;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+/*===== BOTÃO SCROLL UP =====*/
+function handleScrollUp() {
+    const scrollUpBtn = document.getElementById('scroll-up');
+    if (!scrollUpBtn) return;
+
+    if (window.scrollY >= 350) {
+        scrollUpBtn.classList.add('show-scroll');
+    } else {
+        scrollUpBtn.classList.remove('show-scroll');
     }
 }
 
-showMenu('nav-toggle','nav-menu')
+window.addEventListener('scroll', handleScrollUp);
 
-/*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll('.nav_link')
+/*===== REVEAL AO ROLAR (IntersectionObserver) =====*/
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+});
 
-    function linkAction(){
-        //Active link
-            navLink.forEach(n => n.classList.remove('active'))
-                this.classList.add('active')
-
-    //remove menu mobile
-    const navMenu = document.getElementById('nav-menu')
-        navMenu.classList.remove('show')
-}
-
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-//-------------------
-
-/*=============== SHOW SCROLL UP ===============*/ 
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-  }
-  window.addEventListener('scroll', scrollUp)
-  
-  
-
-  
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
